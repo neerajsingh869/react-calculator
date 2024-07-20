@@ -1,0 +1,37 @@
+.calculator {
+  display: grid;
+  grid-template-rows: 100px repeat(5, 75px);
+  grid-template-columns: repeat(4, 75px);
+  background-color: black;
+  gap: 0.25rem;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.calculator > * {
+  background-color: #404040;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: grid;
+  place-content: center;
+  transition: all 200ms ease-in;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.calculator > *:hover {
+  background-color: #262626;
+}
+
+.resultArea {
+  grid-column: 1/-1;
+  justify-content: end;
+  background-color: transparent;
+  font-size: 44px;
+}
+
+.zero {
+  grid-column: 1/3;
+}

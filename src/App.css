@@ -1,0 +1,7 @@
+.calculator-container {
+  outline: 1px solid black;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: #404040;
+}
